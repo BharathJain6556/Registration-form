@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Online Bridge course Form</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<style>
+img{
+	background-color: #333154;
+	padding: 20px;
+	width:140px;
+	display: flex;
+}
+
+header {
+	background-color: #333154;
+  	padding: 30px;
+  	text-align: left;
+	font-family: Georgia, serif;
+  	font-size: 35px;
+  	color: #faf6de;
+  	width:100%;
+}
+
+.vl{
+  	border: 6px solid #abb06a;
+  	height: 140px;
+	display: flex;
+}
+
+h6{
+
+	text-align: right;
+	font-style: italic;
+	color:#faf6de;
+	font-family: cursive;
+}
+
+.flex-container {
+ 	display: flex;
+  	flex-wrap: nowrap;
+}
+
+footer{
+  	background-color: #333154;
+  	padding: 30px;
+  	width:100%;
+}
+
+
+</style>
+
+<body>
+
+<div class="flex-container">
+<img src="C:\Users\BHARATH_JAIN\Desktop\logo.png" alt="Logo" >
+<div class="vl" ></div>
+<header>
+SAHYADRI PU COLLEGE
+<h6 >Your Dreams, Our mission...</h6>
+</header>
+</div>
+
+<div class="text-center pt-4">
+	<h1>Registration Form</h1><br>
+<div class="container">
+	<form method="post" autocomplete="off" name="Sahyadri-excel sheet">
+
+<div class="mb-3">
+    <label for="name" class="form-label">First Name</label>
+    <input type="text" name="First name" class="form-control" placeholder="Enter your Name" required> <br><br>
+
+<div class="mb-3">
+    <label for="name" class="form-label">Middle Name</label>
+    <input type="text" name="Father name" class="form-control" placeholder="Enter your Father Name" required> <br><br>  
+
+<div class="mb-3">
+    <label for="name" class="form-label">Last Name</label>
+    <input type="text" name="Last name" class="form-control" placeholder="Enter your Sur Name" required> <br><br> 
+
+<div class="mb-3">
+    <label for="name" class="radio">Gender :</label>
+    <input type="radio" name="Gender" value="Male"> Male |
+    <input type="radio" name="Gender" value="Female"> Female <br><br>
+
+<div class="mb-3">
+    <label for="name" class="form-label">Whatsapp Number</label>
+    <input type="number"name="Mobile Number" class="form-control" placeholder="Enter Mobile Number" required> <br><br>
+
+<div class="mb-3">
+    <label for="name" class="form-label">Select Board :</label>
+    <input type="radio" name="Board" value="SSLC" > SSLC |	
+    <input type="radio" name="Board" value="CBSE/ICSE" > CBSE/ICSE <br><br>
+
+<div class="mb-3">
+    <label for="name" class="form-label">Year of Passing : </label>
+    <input type="Number:0 to 9" name="Year of passing" placeholder ="Enter Year" required> <br><br>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" name="Email" class="form-control" id="exampleInputEmail" placeholder="Enter valid Email ID" "><br>
+   We'll never share your email with anyone else.</div> <br>
+    </div>
+
+  <button button type="submit" name="submit" value="Send message" class="btn btn-primary">
+  Submit</button>
+
+</form> 
+</div>
+<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxb4THjZ_zaGjTu4LmW20jeQ3NxWF2ejWYHKSfRnFeihbze5roqayrQTyItJbph4R__Yw/exec'
+            const form = document.forms['Sahyadri-excel sheet']
+          
+            form.addEventListener('submit', e => {e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+ </script>
+ </body>
+<footer>
+</footer>
+ </html>
